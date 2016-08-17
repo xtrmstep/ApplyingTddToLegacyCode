@@ -1,7 +1,8 @@
 ﻿using System.Linq;
-using Rule1Example.Taxes;
+using Rule2Example.Notifications;
+using Rule2Example.Taxes;
 
-namespace Rule1Example.Shop
+namespace Rule2Example.Shop
 {
     public class EuropeShop : Shop
     {
@@ -14,9 +15,8 @@ namespace Rule1Example.Shop
             cart.Add(saleItems);
             taxes.ApplyTaxes(cart);
 
-            // TODO > NEW FEATURE > Send notification to accounting if cart total amount exceeds 1000
-            // 1) how to test this new feature?
-            // 2) how to add new code?
+            // NEW FEATURE that could be tested with unit tests
+            new EuropeNotifier().Send(cart);
 
             SaveToDb(cart);
         }
