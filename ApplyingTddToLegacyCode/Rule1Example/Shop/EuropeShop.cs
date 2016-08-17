@@ -14,9 +14,9 @@ namespace Rule1Example.Shop
             cart.Add(saleItems);
             taxes.ApplyTaxes(cart);
 
-            // TODO > NEW FEATURE > Send notification to accounting if cart total amount exceeds 1000 -->
-            // 1) how to test?
-            // 2) hot to add?
+            // TODO > NEW FEATURE > Send notification to accounting if cart total amount exceeds 1000
+            // 1) how to test this new feature?
+            // 2) how to add new code?
 
             SaveToDb(cart);
         }
