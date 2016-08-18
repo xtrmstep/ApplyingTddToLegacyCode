@@ -1,4 +1,4 @@
-﻿using System.Linq;
+﻿using Rule3Example.Data;
 using Rule3Example.Taxes;
 
 namespace Rule3Example.Shop
@@ -7,13 +7,17 @@ namespace Rule3Example.Shop
     {
         public override void CreateSale()
         {
-            var taxes = new AsiaTaxes();
-            var items = LoadSelectedItemsFromDb();
-            var saleItems = items.Select(item => taxes.ApplyTaxes(item)).ToList();
+            var itemsRepository = new ItemsRepository();
+
+            var items = itemsRepository.LoadSelectedItems();
+
+            var saleItems = items.ConvertToSaleItems();
             var cart = new Cart();
             cart.Add(saleItems);
-            taxes.ApplyTaxes(cart);
-            SaveToDb(cart);
+
+            new AsiaTaxes().ApplyTaxes(cart);
+
+            itemsRepository.Save(cart);
         }
     }
 }

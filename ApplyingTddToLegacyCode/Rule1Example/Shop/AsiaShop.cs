@@ -7,8 +7,8 @@ namespace Rule1Example.Shop
     {
         public override void CreateSale()
         {
-            var taxes = new AsiaTaxes();
             var items = LoadSelectedItemsFromDb();
+            var taxes = new AsiaTaxes();
             var saleItems = items.Select(item => taxes.ApplyTaxes(item)).ToList();
             var cart = new Cart();
             cart.Add(saleItems);
