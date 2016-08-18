@@ -8,15 +8,15 @@ namespace Rule2Example.Shop
     {
         public override void CreateSale()
         {
-            var taxes = new EuropeTaxes();
             var items = LoadSelectedItemsFromDb();
+            var taxes = new EuropeTaxes();
             var saleItems = items.Select(item => taxes.ApplyTaxes(item)).ToList();
             var cart = new Cart();
             cart.Add(saleItems);
             taxes.ApplyTaxes(cart);
 
             // NEW FEATURE that could be tested with unit tests
-            new EuropeNotifier().Send(cart);
+            new EuropeShopNotifier().Send(cart);
 
             SaveToDb(cart);
         }

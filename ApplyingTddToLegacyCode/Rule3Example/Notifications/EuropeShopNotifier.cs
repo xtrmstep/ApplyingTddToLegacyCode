@@ -1,6 +1,6 @@
 namespace Rule3Example.Notifications
 {
-    public class EuropeNotifier : DefualtNotifier
+    public class EuropeShopNotifier : DefualtNotifier
     {
         public override void Send(Cart cart)
         {
