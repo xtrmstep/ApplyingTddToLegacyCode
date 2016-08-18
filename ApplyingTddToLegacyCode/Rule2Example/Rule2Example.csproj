@@ -45,7 +45,6 @@
     <Compile Include="Notifications\DefualtNotifier.cs" />
     <Compile Include="Notifications\EuropeNotifier.cs" />
     <Compile Include="Notifications\INotifier.cs" />
-    <Compile Include="Notifications\EmailNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SaleItem.cs" />
     <Compile Include="Shop\AsiaShop.cs" />

@@ -1,3 +1,5 @@
+using System;
+
 namespace Rule2Example.Notifications
 {
     public class EuropeNotifier : DefualtNotifier
@@ -5,8 +7,12 @@ namespace Rule2Example.Notifications
         public override void Send(Cart cart)
         {
             if (cart.TotalSalePrice <= 1000m) return;
-            var emailSender = new EmailNotifier();
-            emailSender.Send(cart);
+            SendByEmail(cart);
+        }
+
+        private void SendByEmail(Cart cart)
+        {
+            // send cart information via SMPT
         }
     }
 }

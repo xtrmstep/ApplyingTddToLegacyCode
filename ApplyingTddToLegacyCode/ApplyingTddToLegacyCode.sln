@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rule1Example", "Rule1Exampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rule2Example", "Rule2Example\Rule2Example.csproj", "{A32714DB-0847-4D9E-81A2-27C7F9AFFF91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rule3Example", "Rule3Example\Rule3Example.csproj", "{14006CA0-0D8A-4394-A298-2CB0047CB3C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A32714DB-0847-4D9E-81A2-27C7F9AFFF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A32714DB-0847-4D9E-81A2-27C7F9AFFF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A32714DB-0847-4D9E-81A2-27C7F9AFFF91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14006CA0-0D8A-4394-A298-2CB0047CB3C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14006CA0-0D8A-4394-A298-2CB0047CB3C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14006CA0-0D8A-4394-A298-2CB0047CB3C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14006CA0-0D8A-4394-A298-2CB0047CB3C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
