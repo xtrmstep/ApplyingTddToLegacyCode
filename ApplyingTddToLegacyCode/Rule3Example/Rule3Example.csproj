@@ -60,7 +60,7 @@
     <Compile Include="Tests\Data\ItemsRepositoryTests.cs" />
     <Compile Include="Tests\Data\ObjectMapperTests.cs" />
     <Compile Include="Tests\Notifications\EmailNotifierTests.cs" />
-    <Compile Include="Tests\Notifications\EuropeNotifierTests.cs" />
+    <Compile Include="Tests\Notifications\EuropeShopNotifierTests.cs" />
     <Compile Include="Tests\Taxes\EuropeTaxesTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
