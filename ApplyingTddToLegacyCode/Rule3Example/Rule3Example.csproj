@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A32714DB-0847-4D9E-81A2-27C7F9AFFF91}</ProjectGuid>
+    <ProjectGuid>{14006CA0-0D8A-4394-A298-2CB0047CB3C6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Rule2Example</RootNamespace>
-    <AssemblyName>Rule2Example</AssemblyName>
+    <RootNamespace>Rule3Example</RootNamespace>
+    <AssemblyName>Rule3Example</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,8 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cart.cs" />
+    <Compile Include="Data\ItemsRepository.cs" />
+    <Compile Include="Data\ObjectMapper.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Notifications\DefualtNotifier.cs" />
+    <Compile Include="Notifications\EmailNotifier.cs" />
     <Compile Include="Notifications\EuropeShopNotifier.cs" />
     <Compile Include="Notifications\INotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,10 +56,13 @@
     <Compile Include="Taxes\AsiaTaxes.cs" />
     <Compile Include="Taxes\EuropeTaxes.cs" />
     <Compile Include="Taxes\Taxes.cs" />
+    <Compile Include="Tests\CartTests.cs" />
+    <Compile Include="Tests\Data\ItemsRepositoryTests.cs" />
+    <Compile Include="Tests\Data\ObjectMapperTests.cs" />
     <Compile Include="Tests\Notifications\EmailNotifierTests.cs" />
     <Compile Include="Tests\Notifications\EuropeNotifierTests.cs" />
+    <Compile Include="Tests\Taxes\EuropeTaxesTests.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
