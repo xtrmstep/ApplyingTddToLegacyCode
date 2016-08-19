@@ -56,8 +56,12 @@
     <Compile Include="Taxes\AsiaTaxes.cs" />
     <Compile Include="Taxes\EuropeTaxes.cs" />
     <Compile Include="Taxes\Taxes.cs" />
+    <Compile Include="Tests\CartTests.cs" />
+    <Compile Include="Tests\Data\ItemsRepositoryTests.cs" />
+    <Compile Include="Tests\Data\ObjectMapperTests.cs" />
     <Compile Include="Tests\Notifications\EmailNotifierTests.cs" />
     <Compile Include="Tests\Notifications\EuropeNotifierTests.cs" />
+    <Compile Include="Tests\Taxes\EuropeTaxesTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
