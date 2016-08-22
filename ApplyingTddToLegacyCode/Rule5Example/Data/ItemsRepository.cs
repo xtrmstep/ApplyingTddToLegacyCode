@@ -2,7 +2,7 @@
 
 namespace Rule5Example.Data
 {
-    public class ItemsRepository
+    public class ItemsRepository : IItemsRepository
     {
         public IList<Item> LoadSelectedItems()
         {
@@ -17,7 +17,7 @@ namespace Rule5Example.Data
             });
         }
 
-        internal void Save(Cart cart)
+        public void Save(Cart cart)
         {
             // store to DB
         }

@@ -6,9 +6,9 @@ namespace Rule5Example.Shop
 {
     public class EuropeShop : Shop
     {
-        private readonly ItemsRepository _itemsRepository;
-        private readonly EuropeTaxes _europeTaxes;
-        private readonly EuropeShopNotifier _europeShopNotifier;
+        private readonly IItemsRepository _itemsRepository;
+        private readonly Taxes.Taxes _europeTaxes;
+        private readonly INotifier _europeShopNotifier;
 
         public EuropeShop()
         {

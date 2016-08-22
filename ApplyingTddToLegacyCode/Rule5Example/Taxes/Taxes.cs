@@ -2,6 +2,6 @@
 {
     public abstract class Taxes
     {
-        internal abstract void ApplyTaxes(Cart cart);
+        public abstract void ApplyTaxes(Cart cart);
     }
 }

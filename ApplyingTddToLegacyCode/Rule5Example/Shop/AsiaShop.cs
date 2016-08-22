@@ -5,8 +5,8 @@ namespace Rule5Example.Shop
 {
     public class AsiaShop : Shop
     {
-        private readonly ItemsRepository _itemsRepository;
-        private readonly AsiaTaxes _asiaTaxes;
+        private readonly IItemsRepository _itemsRepository;
+        private readonly Taxes.Taxes _asiaTaxes;
 
         public AsiaShop()
         {

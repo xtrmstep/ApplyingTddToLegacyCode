@@ -2,7 +2,7 @@ namespace Rule5Example.Taxes
 {
     public class EuropeTaxes : Taxes
     {
-        internal override void ApplyTaxes(Cart cart)
+        public override void ApplyTaxes(Cart cart)
         {
             ApplyToItems(cart);
             ApplyToCart(cart);
