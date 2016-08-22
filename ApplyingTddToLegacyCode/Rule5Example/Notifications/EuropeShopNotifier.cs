@@ -1,6 +1,6 @@
 namespace Rule5Example.Notifications
 {
-    public class EuropeShopNotifier : DefualtNotifier
+    public class EuropeShopNotifier : DefaultNotifier
     {
         private readonly EmailNotifier _emailSender;
         public EuropeShopNotifier()
