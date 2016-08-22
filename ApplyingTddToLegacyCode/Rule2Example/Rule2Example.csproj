@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="Cart.cs" />
     <Compile Include="Item.cs" />
-    <Compile Include="Notifications\DefualtNotifier.cs" />
+    <Compile Include="Notifications\DefaultNotifier.cs" />
     <Compile Include="Notifications\EuropeShopNotifier.cs" />
     <Compile Include="Notifications\INotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
