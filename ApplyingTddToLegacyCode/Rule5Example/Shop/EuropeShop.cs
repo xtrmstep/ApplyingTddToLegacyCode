@@ -19,18 +19,14 @@ namespace Rule5Example.Shop
 
         public override void CreateSale()
         {
-            
             var items = _itemsRepository.LoadSelectedItems();
-
             var saleItems = items.ConvertToSaleItems();
 
             var cart = new Cart();
             cart.Add(saleItems);
 
             _europeTaxes.ApplyTaxes(cart);
-
             _europeShopNotifier.Send(cart);
-
             _itemsRepository.Save(cart);
         }
     }
