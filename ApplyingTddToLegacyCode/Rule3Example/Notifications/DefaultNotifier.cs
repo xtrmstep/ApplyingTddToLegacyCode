@@ -1,6 +1,6 @@
 namespace Rule3Example.Notifications
 {
-    public class DefualtNotifier : INotifier
+    public class DefaultNotifier : INotifier
     {
         public virtual void Send(Cart cart)
         {

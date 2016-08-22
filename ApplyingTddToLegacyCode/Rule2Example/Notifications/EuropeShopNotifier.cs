@@ -2,7 +2,7 @@ using System;
 
 namespace Rule2Example.Notifications
 {
-    public class EuropeShopNotifier : DefualtNotifier
+    public class EuropeShopNotifier : DefaultNotifier
     {
         public override void Send(Cart cart)
         {
