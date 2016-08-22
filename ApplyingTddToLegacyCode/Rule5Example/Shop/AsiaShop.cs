@@ -5,19 +5,26 @@ namespace Rule5Example.Shop
 {
     public class AsiaShop : Shop
     {
+        private readonly ItemsRepository _itemsRepository;
+        private readonly AsiaTaxes _asiaTaxes;
+
+        public AsiaShop()
+        {
+            _itemsRepository = new ItemsRepository();
+            _asiaTaxes = new AsiaTaxes();
+        }
+
         public override void CreateSale()
         {
-            var itemsRepository = new ItemsRepository();
-
-            var items = itemsRepository.LoadSelectedItems();
+            var items = _itemsRepository.LoadSelectedItems();
 
             var saleItems = items.ConvertToSaleItems();
             var cart = new Cart();
             cart.Add(saleItems);
 
-            new AsiaTaxes().ApplyTaxes(cart);
+            _asiaTaxes.ApplyTaxes(cart);
 
-            itemsRepository.Save(cart);
+            _itemsRepository.Save(cart);
         }
     }
 }

@@ -6,21 +6,32 @@ namespace Rule5Example.Shop
 {
     public class EuropeShop : Shop
     {
+        private readonly ItemsRepository _itemsRepository;
+        private readonly EuropeTaxes _europeTaxes;
+        private readonly EuropeShopNotifier _europeShopNotifier;
+
+        public EuropeShop()
+        {
+            _itemsRepository = new ItemsRepository();
+            _europeTaxes = new EuropeTaxes();
+            _europeShopNotifier = new EuropeShopNotifier();
+        }
+
         public override void CreateSale()
         {
-            var itemsRepository = new ItemsRepository();
-            var items = itemsRepository.LoadSelectedItems();
+            
+            var items = _itemsRepository.LoadSelectedItems();
 
             var saleItems = items.ConvertToSaleItems();
 
             var cart = new Cart();
             cart.Add(saleItems);
 
-            new EuropeTaxes().ApplyTaxes(cart);
+            _europeTaxes.ApplyTaxes(cart);
 
-            new EuropeShopNotifier().Send(cart);
+            _europeShopNotifier.Send(cart);
 
-            itemsRepository.Save(cart);
+            _itemsRepository.Save(cart);
         }
     }
 }
