@@ -1,4 +1,4 @@
-namespace Rule5Example.Taxes
+namespace Rule7Example.Taxes
 {
     public class AsiaTaxes : Taxes
     {
