@@ -1,4 +1,4 @@
-namespace Rule8Example
+namespace Rule7Example
 {
     public class Item
     {

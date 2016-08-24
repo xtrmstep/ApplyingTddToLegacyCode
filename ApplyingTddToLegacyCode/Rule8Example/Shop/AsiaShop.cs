@@ -1,7 +1,7 @@
-﻿using Rule8Example.Data;
-using Rule8Example.Taxes;
+﻿using Rule7Example.Data;
+using Rule7Example.Taxes;
 
-namespace Rule8Example.Shop
+namespace Rule7Example.Shop
 {
     public class AsiaShop : Shop
     {

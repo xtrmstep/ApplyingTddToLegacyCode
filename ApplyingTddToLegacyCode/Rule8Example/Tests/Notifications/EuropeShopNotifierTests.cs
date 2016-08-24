@@ -1,6 +1,6 @@
-﻿using Rule8Example.Notifications;
+﻿using Rule7Example.Notifications;
 
-namespace Rule8Example.Tests.Notifications
+namespace Rule7Example.Tests.Notifications
 {
     public class EuropeShopNotifierTests
     {

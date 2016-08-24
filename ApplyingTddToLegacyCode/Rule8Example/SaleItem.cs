@@ -1,12 +1,12 @@
-namespace Rule8Example
+namespace Rule7Example
 {
     public class SaleItem : Item
     {
-        private Item _item;
-
         public SaleItem(Item item)
         {
-            _item = item;
+            Name = item.Name;
+            Price = item.Price;
+            SalePrice = item.Price;
         }
 
         public decimal SalePrice { get; set; }

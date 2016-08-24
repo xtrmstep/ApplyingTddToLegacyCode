@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rule3Example", "Rule3Exampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rule5Example", "Rule5Example\Rule5Example.csproj", "{1E9391C4-BE4A-4DF8-92EF-580FFB2FBE41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rule8Example", "Rule8Example\Rule8Example.csproj", "{5B5102AD-8CFA-4F26-8931-AA351D43BB4B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rule7Example", "Rule8Example\Rule7Example.csproj", "{5B5102AD-8CFA-4F26-8931-AA351D43BB4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Rule8Example.Data
+namespace Rule7Example.Data
 {
     public interface IItemsRepository
     {

@@ -1,4 +1,4 @@
-﻿namespace Rule8Example.Notifications
+﻿namespace Rule7Example.Notifications
 {
     public class EmailNotifier : INotifier
     {

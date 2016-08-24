@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Rule8Example
+namespace Rule7Example
 {
     public class Cart
     {

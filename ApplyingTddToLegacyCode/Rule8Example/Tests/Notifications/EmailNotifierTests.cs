@@ -1,4 +1,4 @@
-﻿namespace Rule8Example.Tests.Notifications
+﻿namespace Rule7Example.Tests.Notifications
 {
     public class EmailNotifierTests
     {

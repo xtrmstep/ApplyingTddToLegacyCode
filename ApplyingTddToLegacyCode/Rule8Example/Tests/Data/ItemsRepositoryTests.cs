@@ -1,4 +1,4 @@
-﻿namespace Rule8Example.Tests.Data
+﻿namespace Rule7Example.Tests.Data
 {
     public class ItemsRepositoryTests
     {

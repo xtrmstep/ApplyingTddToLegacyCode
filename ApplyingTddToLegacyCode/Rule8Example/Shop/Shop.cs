@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Rule8Example.Shop
+namespace Rule7Example.Shop
 {
     public class Shop
     {

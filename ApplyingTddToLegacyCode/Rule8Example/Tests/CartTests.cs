@@ -1,4 +1,4 @@
-﻿namespace Rule8Example.Tests
+﻿namespace Rule7Example.Tests
 {
     public class CartTests
     {
