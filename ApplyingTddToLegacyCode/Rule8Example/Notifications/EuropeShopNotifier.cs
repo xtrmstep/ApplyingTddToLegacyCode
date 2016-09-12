@@ -2,10 +2,10 @@ namespace Rule8Example.Notifications
 {
     public class EuropeShopNotifier : DefaultNotifier
     {
-        private readonly EmailNotifier _emailSender;
-        public EuropeShopNotifier()
+        private readonly INotifier _emailSender;
+        public EuropeShopNotifier(INotifier notifier)
         {
-            _emailSender = new EmailNotifier();
+            _emailSender = notifier;
         }
         public override void Send(Cart cart)
         {

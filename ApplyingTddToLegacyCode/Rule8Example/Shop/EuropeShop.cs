@@ -14,7 +14,7 @@ namespace Rule8Example.Shop
         {
             _itemsRepository = new ItemsRepository();
             _europeTaxes = new EuropeTaxes();
-            _europeShopNotifier = new EuropeShopNotifier();
+            _europeShopNotifier = new EuropeShopNotifier(new EmailNotifier());
         }
 
         public override void CreateSale()
