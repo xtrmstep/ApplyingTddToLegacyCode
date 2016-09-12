@@ -14,7 +14,6 @@ namespace Rule8Example.Tests.Notifications
             var cart = new Cart();
             var fakeNotifier = new MockNotifier();
             var shopNotifier = new EuropeShopNotifier(fakeNotifier);
-            // add items to cart
 
             // act
             shopNotifier.Send(cart);
@@ -29,15 +28,14 @@ namespace Rule8Example.Tests.Notifications
             // arrange
             var cart = new Cart();
             cart.Add(new[] {new SaleItem(new Item {Name = "Item 1", Price = 1001m})});
-            var fakeNotifier = new MockNotifier();
-            var shopNotifier = new EuropeShopNotifier(fakeNotifier);
-            // add items to cart
+            var mockNotifier = new MockNotifier();
+            var shopNotifier = new EuropeShopNotifier(mockNotifier);
 
             // act
             shopNotifier.Send(cart);
 
             // assert
-            Assert.True(fakeNotifier.IsNotified);
+            Assert.True(mockNotifier.IsNotified);
         }
 
         [Fact]
@@ -48,7 +46,6 @@ namespace Rule8Example.Tests.Notifications
             cart.Add(new[] { new SaleItem(new Item { Name = "Item 1", Price = 1001m }) });
             var mockNotifier = new Mock<INotifier>();
             var shopNotifier = new EuropeShopNotifier(mockNotifier.Object);
-            // add items to cart
 
             // act
             shopNotifier.Send(cart);
